@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Speech Festival Performance & Recitation Platform</title>
+  <title>Speech Festival Solo Verse Speaking Platform</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .word-matched { color: #15803d; font-weight: 600; background-color: #dcfce7; padding: 1px 4px; border-radius: 3px; }
@@ -20,8 +20,8 @@
     <!-- Header -->
     <header class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
       <div>
-        <h1 class="text-2xl font-extrabold text-indigo-700">Speech Festival Performance & Recitation Platform</h1>
-        <p class="text-sm text-slate-500">Master stress, intonation, run-on lines, expanded vocabulary & mic analysis</p>
+        <h1 class="text-2xl font-extrabold text-indigo-700">Speech Festival Solo Verse Speaking Platform</h1>
+        <p class="text-sm text-slate-500">Expressive AI Prosody Engine (Stress, Run-ons, Intonation) & Mic Practice</p>
       </div>
       
       <!-- Filters -->
@@ -53,20 +53,20 @@
 
     <!-- Navigation Tabs -->
     <div class="flex border-b border-slate-200 mb-6 space-x-2 overflow-x-auto">
-      <button onclick="switchTab('listen')" id="tab-listen" class="px-4 py-2 text-sm font-bold border-b-2 border-indigo-600 text-indigo-600 whitespace-nowrap">1. Recitation, Stress & Intonation Guide</button>
+      <button onclick="switchTab('listen')" id="tab-listen" class="px-4 py-2 text-sm font-bold border-b-2 border-indigo-600 text-indigo-600 whitespace-nowrap">1. Expressive AI Audio & Markings</button>
       <button onclick="switchTab('vocab')" id="tab-vocab" class="px-4 py-2 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-indigo-600 whitespace-nowrap">2. Expanded Key Vocab Guide</button>
       <button onclick="switchTab('practice')" id="tab-practice" class="px-4 py-2 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-indigo-600 whitespace-nowrap">3. Mic Practice & AI Feedback</button>
       <button onclick="switchTab('history')" id="tab-history" class="px-4 py-2 text-sm font-bold border-b-2 border-transparent text-slate-500 hover:text-indigo-600 whitespace-nowrap">4. Progress Tracker & Comparison</button>
     </div>
 
-    <!-- TAB 1: LISTEN & PERFORMANCE MARKUP -->
+    <!-- TAB 1: LISTEN & EXPRESSIVE ENGINE -->
     <div id="view-listen" class="space-y-6">
       <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
         <!-- Controls Bar -->
         <div class="flex flex-wrap items-center justify-between gap-4 mb-6 bg-indigo-50/60 p-4 rounded-xl border border-indigo-100">
           <div class="flex items-center gap-3">
-            <button onclick="playFullPoem()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg text-sm flex items-center gap-2 shadow-sm">
-              ▶ Play Audio Reference
+            <button onclick="playExpressivePoem()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg text-sm flex items-center gap-2 shadow-sm">
+              🎭 Play Expressive AI Recitation (Stress & Run-ons)
             </button>
             <button onclick="stopAudio()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold px-4 py-2 rounded-lg text-sm">
               ⏹ Stop
@@ -74,11 +74,11 @@
           </div>
           <div class="flex items-center gap-4 text-sm">
             <div>
-              <label class="text-slate-600 font-medium mr-2">Accent / Voice:</label>
+              <label class="text-slate-600 font-medium mr-2">Voice Accent:</label>
               <select id="voiceSelect" class="border rounded-md px-2 py-1 bg-white text-xs"></select>
             </div>
             <div>
-              <label class="text-slate-600 font-medium mr-2">Speed:</label>
+              <label class="text-slate-600 font-medium mr-2">Base Speed:</label>
               <input type="range" id="rateSlider" min="0.6" max="1.2" step="0.1" value="0.8" class="align-middle" onchange="updateSpeedLabel(this.value)">
               <span id="speedVal" class="text-xs text-slate-500 font-mono">0.8x</span>
             </div>
@@ -95,12 +95,12 @@
 
           <!-- Recitation Notation Legend -->
           <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs space-y-1">
-            <p class="font-bold text-slate-700 uppercase tracking-wider mb-1">🎭 Adjudicator Recitation Markings Legend:</p>
+            <p class="font-bold text-slate-700 uppercase tracking-wider mb-1">🎭 Expressive Recitation Engine Legend:</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-slate-600">
-              <span><strong class="stress-word">STRESS</strong> : Word Emphasis</span>
-              <span><span class="pause-mark">||</span> : Dramatic Pause</span>
-              <span><span class="runon-mark">⤷ [NO PAUSE]</span> : Run-on Line</span>
-              <span><span class="intonation-up">↗</span> / <span class="intonation-down">↘</span> : Pitch Rise / Fall</span>
+              <span><strong class="stress-word">STRESS</strong> : Higher Pitch & Volume</span>
+              <span><span class="pause-mark">||</span> : 700ms Dramatic Pause</span>
+              <span><span class="runon-mark">⤷ [NO PAUSE]</span> : Zero Pause Run-on</span>
+              <span><span class="intonation-up">↗</span> / <span class="intonation-down">↘</span> : Pitch Modulation</span>
             </div>
           </div>
         </div>
@@ -128,7 +128,6 @@
 
     <!-- TAB 3: MIC PRACTICE & AI FEEDBACK -->
     <div id="view-practice" class="hidden space-y-6">
-      <!-- Top Control Bar in Practice View -->
       <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-wrap items-center justify-between gap-4">
         <div>
           <h3 id="practicePoemHeader" class="text-base font-bold text-slate-800"></h3>
@@ -141,7 +140,6 @@
         </div>
       </div>
 
-      <!-- Collapsible Poem Text Display for Reading Mode -->
       <div id="practiceScriptContainer" class="bg-amber-50/70 border border-amber-200 p-5 rounded-2xl">
         <div class="flex justify-between items-center mb-2 pb-2 border-b border-amber-200/60">
           <span class="text-xs font-bold uppercase tracking-wider text-amber-800">📖 Poem Script Prompt (Reading Mode)</span>
@@ -151,7 +149,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Recording Panel -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-5">
           <h2 class="text-lg font-bold text-slate-900">Recording Studio</h2>
           <div>
@@ -170,7 +167,6 @@
           </div>
         </div>
 
-        <!-- AI Real-time Feedback -->
         <div class="md:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-5">
           <h2 class="text-lg font-bold text-slate-900">Speech Performance Analysis</h2>
           <div class="grid grid-cols-3 gap-4 text-center">
@@ -405,7 +401,7 @@
 
     let filteredPoems = [...allPoems];
     let currentPoemIndex = 0;
-    let attempts = JSON.parse(localStorage.getItem('sf_attempts_v4') || '[]');
+    let attempts = JSON.parse(localStorage.getItem('sf_attempts_v5') || '[]');
     let synth = window.speechSynthesis;
     let recognition = null;
     let isRecording = false;
@@ -413,6 +409,7 @@
     let timerInterval = null;
     let recordedTranscript = "";
     let isScriptVisible = true;
+    let isPlayingQueue = false;
 
     function populateVoices() {
       const voiceSelect = document.getElementById('voiceSelect');
@@ -484,15 +481,14 @@
       document.getElementById('poemTitleHeading').innerText = poem.title;
       document.getElementById('poemAuthorHeading').innerText = `By ${poem.author}`;
       document.getElementById('poemCategoryBadge').innerText = poem.category;
-      document.getElementById('adjudicatorAdvice').innerHTML = poem.adjudicatorAdvice || "<strong>Adjudicator Note:</strong> Pay special attention to word emphasis and stanza pauses.";
+      document.getElementById('adjudicatorAdvice').innerHTML = poem.adjudicatorAdvice || "<strong>Adjudicator Note:</strong> Pay special attention to word emphasis, intonation pitch shifts, and run-on transitions.";
 
       const lines = poem.markup && poem.markup.length ? poem.markup : poem.content.split('\n');
       document.getElementById('poemContainer').innerHTML = lines.map((line, i) => {
         if (!line.trim()) return `<div class="h-3"></div>`;
-        const rawText = line.replace(/<[^>]*>?/gm, '');
         return `
           <div class="flex items-start gap-3 hover:bg-slate-50 p-2 rounded-xl transition border border-transparent hover:border-slate-200">
-            <button onclick="speakText('${rawText.replace(/'/g, "\\'")}')" class="mt-1 text-[11px] font-sans font-bold bg-slate-200 hover:bg-indigo-600 hover:text-white text-slate-700 px-2 py-0.5 rounded transition">🔊 Line ${i+1}</button>
+            <button onclick="playExpressiveLine(${i})" class="mt-1 text-[11px] font-sans font-bold bg-indigo-100 hover:bg-indigo-600 hover:text-white text-indigo-800 px-2.5 py-1 rounded-md transition shadow-sm">🔊 Line ${i+1}</button>
             <div class="flex-1">${line}</div>
           </div>
         `;
@@ -510,7 +506,7 @@
           <div class="p-4 border rounded-xl bg-slate-50 space-y-2 hover:border-indigo-300 transition shadow-sm">
             <div class="flex justify-between items-center">
               <h3 class="font-bold text-base text-indigo-700">${v.word}</h3>
-              <button onclick="speakText('${v.word}')" class="text-[11px] bg-indigo-100 text-indigo-700 px-2.5 py-1 rounded-md font-bold hover:bg-indigo-200">🔊 Pronounce</button>
+              <button onclick="speakSingleWord('${v.word}')" class="text-[11px] bg-indigo-100 text-indigo-700 px-2.5 py-1 rounded-md font-bold hover:bg-indigo-200">🔊 Pronounce</button>
             </div>
             <p class="text-xs font-mono text-slate-500">${v.phonetics}</p>
             <p class="text-xs font-semibold text-slate-700">中文釋義: <span class="text-slate-900 font-normal">${v.meaning}</span></p>
@@ -521,6 +517,150 @@
       // Tab 3 Practice UI
       document.getElementById('practicePoemHeader').innerText = `${poem.title} (${poem.category})`;
       document.getElementById('practiceScriptBody').innerText = poem.content;
+    }
+
+    // --- Dynamic Prosody & Expressive AI Speech Engine ---
+    function parseMarkupLineToSequence(lineMarkup) {
+      const div = document.createElement('div');
+      div.innerHTML = lineMarkup;
+
+      const isRunOn = lineMarkup.includes('runon-mark');
+      const isIntonationUp = lineMarkup.includes('intonation-up');
+      const isIntonationDown = lineMarkup.includes('intonation-down');
+
+      let basePitch = 1.0;
+      if (isIntonationUp) basePitch = 1.25;
+      if (isIntonationDown) basePitch = 0.75;
+
+      const baseRate = parseFloat(document.getElementById('rateSlider').value) || 0.8;
+      let sequence = [];
+
+      function traverse(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+          let text = node.textContent.replace(/[||↗↘]/g, '').trim();
+          if (text) {
+            sequence.push({
+              type: 'speak',
+              text: text,
+              pitch: basePitch,
+              rate: baseRate,
+              volume: 0.85
+            });
+          }
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          if (node.classList.contains('pause-mark')) {
+            sequence.push({ type: 'pause', duration: 700 });
+          } else if (node.classList.contains('stress-word')) {
+            let text = node.textContent.trim();
+            if (text) {
+              sequence.push({
+                type: 'speak',
+                text: text,
+                pitch: Math.min(basePitch * 1.3, 1.8),  // Pitch boost for stress
+                rate: Math.max(baseRate * 0.85, 0.5),   // Slower for emphasis
+                volume: 1.0                              // Louder volume
+              });
+            }
+          } else if (node.classList.contains('runon-mark')) {
+            // Handled at line level
+          } else {
+            for (let child of node.childNodes) traverse(child);
+          }
+        }
+      }
+
+      for (let child of div.childNodes) {
+        traverse(child);
+      }
+
+      // Add line-end pause if NOT a run-on line
+      if (!isRunOn) {
+        sequence.push({ type: 'pause', duration: 400 });
+      }
+
+      return sequence;
+    }
+
+    function playExpressivePoem() {
+      stopAudio();
+      const poem = filteredPoems[currentPoemIndex];
+      const lines = poem.markup && poem.markup.length ? poem.markup : poem.content.split('\n');
+
+      let fullSequence = [];
+      lines.forEach(lineMarkup => {
+        if (lineMarkup.trim()) {
+          const lineSeq = parseMarkupLineToSequence(lineMarkup);
+          fullSequence = fullSequence.concat(lineSeq);
+        }
+      });
+
+      isPlayingQueue = true;
+      executeAudioSequence(fullSequence, 0);
+    }
+
+    function playExpressiveLine(index) {
+      stopAudio();
+      const poem = filteredPoems[currentPoemIndex];
+      const lines = poem.markup && poem.markup.length ? poem.markup : poem.content.split('\n');
+      const lineMarkup = lines[index];
+
+      if (lineMarkup) {
+        const sequence = parseMarkupLineToSequence(lineMarkup);
+        isPlayingQueue = true;
+        executeAudioSequence(sequence, 0);
+      }
+    }
+
+    function executeAudioSequence(sequence, index) {
+      if (!isPlayingQueue || index >= sequence.length) {
+        isPlayingQueue = false;
+        return;
+      }
+
+      const item = sequence[index];
+
+      if (item.type === 'pause') {
+        setTimeout(() => {
+          if (isPlayingQueue) executeAudioSequence(sequence, index + 1);
+        }, item.duration);
+        return;
+      }
+
+      if (item.type === 'speak') {
+        const utterance = new SpeechSynthesisUtterance(item.text);
+        const selectedVoice = document.getElementById('voiceSelect').value;
+        const voice = synth.getVoices().find(v => v.name === selectedVoice);
+        if (voice) utterance.voice = voice;
+
+        utterance.pitch = item.pitch || 1.0;
+        utterance.rate = item.rate || 0.8;
+        utterance.volume = item.volume || 0.9;
+
+        utterance.onend = () => {
+          if (isPlayingQueue) executeAudioSequence(sequence, index + 1);
+        };
+
+        utterance.onerror = () => {
+          if (isPlayingQueue) executeAudioSequence(sequence, index + 1);
+        };
+
+        synth.speak(utterance);
+      }
+    }
+
+    function speakSingleWord(word) {
+      stopAudio();
+      const utterance = new SpeechSynthesisUtterance(word);
+      const selectedVoice = document.getElementById('voiceSelect').value;
+      const voice = synth.getVoices().find(v => v.name === selectedVoice);
+      if (voice) utterance.voice = voice;
+      utterance.rate = 0.8;
+      synth.speak(utterance);
+    }
+
+    function stopAudio() {
+      isPlayingQueue = false;
+      synth.cancel();
     }
 
     function toggleScriptDisplay() {
@@ -541,25 +681,8 @@
       document.getElementById('speedVal').innerText = `${val}x`;
     }
 
-    function speakText(text) {
-      synth.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      const selectedVoice = document.getElementById('voiceSelect').value;
-      const voice = synth.getVoices().find(v => v.name === selectedVoice);
-      if (voice) utterance.voice = voice;
-      utterance.rate = parseFloat(document.getElementById('rateSlider').value);
-      synth.speak(utterance);
-    }
-
-    function playFullPoem() {
-      speakText(filteredPoems[currentPoemIndex].content);
-    }
-
-    function stopAudio() {
-      synth.cancel();
-    }
-
     function switchTab(tab) {
+      stopAudio();
       ['listen', 'vocab', 'practice', 'history'].forEach(t => {
         document.getElementById(`view-${t}`).classList.add('hidden');
         const tabBtn = document.getElementById(`tab-${t}`);
@@ -665,7 +788,7 @@
         wpm: wpm
       };
       attempts.unshift(newAttempt);
-      localStorage.setItem('sf_attempts_v4', JSON.stringify(attempts));
+      localStorage.setItem('sf_attempts_v5', JSON.stringify(attempts));
       renderHistoryTable();
     }
 
@@ -705,7 +828,7 @@
     function clearHistory() {
       if (confirm("Are you sure you want to clear your practice logs?")) {
         attempts = [];
-        localStorage.removeItem('sf_attempts_v4');
+        localStorage.removeItem('sf_attempts_v5');
         renderHistoryTable();
       }
     }
