@@ -21,7 +21,7 @@
     <header class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
       <div>
         <h1 class="text-2xl font-extrabold text-indigo-700">Speech Festival Solo Verse Speaking Platform</h1>
-        <p class="text-sm text-slate-500">Natural Audio Options, Recitation Markings, Expanded Vocab & Practice Studio</p>
+        <p class="text-sm text-slate-500">Complete 26-Poem Library | Expressive & Normal Audio | Mic Analysis</p>
       </div>
       
       <!-- Filters -->
@@ -105,7 +105,7 @@
           <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs space-y-1">
             <p class="font-bold text-slate-700 uppercase tracking-wider mb-1">🎭 Adjudicator Recitation Markings Legend:</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-slate-600">
-              <span><strong class="stress-word">STRESS</strong> : Subtle Word Emphasis</span>
+              <span><strong class="stress-word">STRESS</strong> : Word Emphasis</span>
               <span><span class="pause-mark">||</span> : Natural Pause</span>
               <span><span class="runon-mark">⤷ [NO PAUSE]</span> : Run-on Line Transition</span>
               <span><span class="intonation-up">↗</span> / <span class="intonation-down">↘</span> : Gentle Pitch Rise / Fall</span>
@@ -238,8 +238,9 @@
   </div>
 
   <script>
-    // --- Official 26 Speech Festival Poems with Expanded Vocab & Performance Markings ---
+    // --- Complete Library of All 26 Speech Festival Competition Poems ---
     const allPoems = [
+      // BOYS S1 - S5
       {
         id: "b1",
         category: "Boys S1",
@@ -327,7 +328,7 @@
           `Let <span class="stress-word">no one</span> steal your dreams <span class="pause-mark">||</span>`,
           `Let <span class="stress-word">no one</span> tear apart <span class="runon-mark">⤷ [NO PAUSE]</span>`,
           `The burning of <span class="stress-word">ambition</span> <span class="pause-mark">||</span>`,
-          `That fires the drive inside your <span class="stress-word">heart</span> <span class="intonation-down">↘</span>`,
+          `That tires the drive inside your <span class="stress-word">heart</span> <span class="intonation-down">↘</span>`,
           `Let no one steal your dreams <span class="pause-mark">||</span>`,
           `Let no one tell you that you <span class="stress-word">can't</span> <span class="pause-mark">||</span>`,
           `Let no one <span class="stress-word">hold you back</span> <span class="pause-mark">||</span>`,
@@ -348,6 +349,100 @@
       },
       {
         id: "b4",
+        category: "Boys S2",
+        title: "The Boy Who Broke Things",
+        author: "Brian Patten",
+        content: `The boy kept breaking things.\nHe broke the one window through which the world\nlooked bright.\nHe broke bottles.\nHe broke promises.\nHe broke his mother's heart.\nHe broke the lock on the cupboard in which she kept\nthe sky,\nAnd so she floated off,\nAnd was lost amongst clouds forever.\nHe broke the lock on the box in which his father kept\nthe ocean.\nHis father was swept away and drowned,\nAnd the boy never saw him again.\nAngry, he stomped on the earth and tried to break it,\nBut it was a tough nut, the earth -\nFar tougher than him.\nAnd his anger grew,\nUntil it became a tree inside him,\nAnd all its leaves were poisonous, and nothing sang,\nAnd all its branches were empty.\nThe boy was angry.\nHe tore the curtain that separated life from death.\nAnd so he could no longer tell\nWhat was living and what was dead inside him.\nHe smashed the clues we use to separate fact\nfrom fiction,\nThey became one thing to him.\nHis anger was like a nasty giant.\nHe was angry, but he could not say why.\nThe answer to his anger stuck in his throat\nIt was a secret he did not want to keep, but could\nnot get rid of,\nAnd the bottled up pain inside him was like a\nmad genie.\nAnd he wept, and he wept and he wept.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Build dark emotional intensity. Contrast the boy's violent stomping actions with the tragic, quiet repetition of 'and he wept' at the climax.",
+        markup: [
+          `The boy kept <span class="stress-word">breaking things</span>. <span class="pause-mark">||</span>`,
+          `He broke the one window through which the world <span class="runon-mark">⤷ [NO PAUSE]</span> looked <span class="stress-word">bright</span>.`,
+          `He broke <span class="stress-word">bottles</span>. <span class="pause-mark">||</span> He broke <span class="stress-word">promises</span>. <span class="pause-mark">||</span>`,
+          `He broke his mother's <span class="stress-word">heart</span>. <span class="intonation-down">↘</span>`,
+          `Angry, he <span class="stress-word">stomped</span> on the earth <span class="runon-mark">⤷ [NO PAUSE]</span> and tried to break it, <span class="pause-mark">||</span>`,
+          `And he <span class="stress-word">wept</span>, <span class="pause-mark">||</span> and he <span class="stress-word">wept</span> <span class="pause-mark">||</span> and he <span class="stress-word">wept</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "floated", phonetics: "/ˈfloʊ.t̬ɪd/", meaning: "漂浮 / 飄走" },
+          { word: "stomped", phonetics: "/stɑːmpt/", meaning: "重踏 / 跺腳" },
+          { word: "poisonous", phonetics: "/ˈpɔɪ.zən.əs/", meaning: "有毒的 / 惡意的" },
+          { word: "fiction", phonetics: "/ˈfɪk.ʃən/", meaning: "虛構 / 小說" },
+          { word: "nasty", phonetics: "/ˈnæsti/", meaning: "惡劣的 / 脾氣暴躁的" },
+          { word: "genie", phonetics: "/ˈdʒiː.ni/", meaning: "精靈 / 魔神" }
+        ]
+      },
+      {
+        id: "b5",
+        category: "Boys S3",
+        title: "Limpet",
+        author: "Chrissie Gittins",
+        content: `I am a Cornish limpet,\nbeen here for a hundred years,\nsucking and gripping and sticking to this stone\nwith a hundred thousand fears.\nWhat if I get put in a bucket\nand dumped in the boot of a car,\nwith wellies and jellies and a windbreaker\nand a shell in the shape of a star?\nI'd miss my chats with the ancient crab,\nthe swell and wash of the tide,\nthe soothing stroke of anemones,\nthe storms when the fish come and hide.\nBut I hang on tight and hope for the best,\nI avoid anyone with a spade,\nwhen the sun beats down in a glisten\non the sea, my fears begin to fade.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Expressive persona poem! Adopt a clinging, nervous character voice for the limpet that transforms into peaceful serenity in the final stanza.",
+        markup: [
+          `I am a <span class="stress-word">Cornish limpet</span>, <span class="pause-mark">||</span> been here for a <span class="stress-word">hundred years</span>,`,
+          `sucking and gripping and <span class="stress-word">sticking to this stone</span> <span class="runon-mark">⤷ [NO PAUSE]</span>`,
+          `with a hundred thousand <span class="stress-word">fears</span>. <span class="pause-mark">||</span>`,
+          `What if I get put in a <span class="stress-word">bucket</span> <span class="intonation-up">↗</span> <span class="runon-mark">⤷ [NO PAUSE]</span>`,
+          `and dumped in the boot of a <span class="stress-word">car</span>? <span class="pause-mark">||</span>`,
+          `when the sun beats down in a <span class="stress-word">glisten</span> <span class="runon-mark">⤷ [NO PAUSE]</span>`,
+          `on the sea, <span class="pause-mark">||</span> my fears begin to <span class="stress-word">fade</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "limpet", phonetics: "/ˈlɪm.pɪt/", meaning: "帽貝（緊附於岩石上的軟體動物）" },
+          { word: "gripping", phonetics: "/ˈɡrɪp.ɪŋ/", meaning: "緊握 / 抓緊" },
+          { word: "wellies", phonetics: "/ˈwel.iz/", meaning: "長筒雨靴" },
+          { word: "windbreaker", phonetics: "/ˈwɪndˌbreɪ.kɚ/", meaning: "防風夾克" },
+          { word: "anemones", phonetics: "/əˈnem.ə.niːz/", meaning: "海葵" },
+          { word: "glisten", phonetics: "/ˈɡlɪs.ən/", meaning: "閃耀 / 閃光" }
+        ]
+      },
+      {
+        id: "b6",
+        category: "Boys S3",
+        title: "Late Home",
+        author: "Gervase Phinn",
+        content: `Mum: And where have you been until this time?\nBoy: I was...\nMum: Playing football, I bet.\nBoy: No, I was\nMum: When you should have come straight home.\nBoy: If I could explain...\nMum: The times I tell you...\nBoy: You see, I was..\nMum: To come straight home.\nBoy: But...\nMum: You just don't listen, do you?\nBoy: I do, but...\nMum: In one ear and out the other.\nBoy: But...\nMum: No more buts, young man.\nBoy: You see...\nMum: Now, go and wash your hands.\nBoy: I'm trying to tell you...\nMum: Tea will be on the table in five minutes.\nBoy: The thing is....\nMum: Have you any homework?\nBoy: Yes, I have, but...\nMum: Well, after tea it's up to your room.\nBoy: Could I explain...\nMum: And no television tonight.\nBoy: I'm trying to tell you...\nMum: Don't just stand there.\nBoy: Will you listen, please?\nMum: Do as you're told!\nBoy: Mrs Wilson!!!!!\nMum: Pardon?\nBoy: I've been trying to tell you!\nMum: What?\nBoy: That I am not your son and you're not my mum.\nMum: Oh!\nBoy: I live next door.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Humorous dialogue poem! Distinctly differentiate between the scolding, fast-paced mother voice and the hesitant, frustrated boy voice.",
+        markup: [
+          `Mum: And <span class="stress-word">where</span> have you been until this time? <span class="intonation-up">↗</span>`,
+          `Boy: I was... <span class="pause-mark">||</span>`,
+          `Mum: <span class="stress-word">Playing football</span>, I bet! <span class="pause-mark">||</span>`,
+          `Boy: <span class="stress-word">Mrs Wilson!!!!!</span> <span class="intonation-up">↗</span> <span class="pause-mark">||</span>`,
+          `Mum: Pardon? <span class="intonation-up">↗</span>`,
+          `Boy: That I am <span class="stress-word">not your son</span> and you're <span class="stress-word">not my mum</span>. <span class="pause-mark">||</span>`,
+          `Boy: I live <span class="stress-word">next door</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "straight", phonetics: "/streɪt/", meaning: "直接地 / 徑直地" },
+          { word: "explain", phonetics: "/ɪkˈspleɪn/", meaning: "解釋 / 說明" },
+          { word: "pardon", phonetics: "/ˈpɑːr.dən/", meaning: "什麼？/ 請再說一遍" },
+          { word: "homework", phonetics: "/ˈhoʊm.wɝːk/", meaning: "功課 / 作業" }
+        ]
+      },
+      {
+        id: "b7",
+        category: "Boys S4",
+        title: "I Remember, I Remember",
+        author: "Thomas Hood",
+        content: `I remember, I remember,\nThe house where I was born,\nThe little window where the sun\nCame peeping in at morn;\nHe never came a wink too soon,\nNor brought too long a day,\nBut now, I often wish the night\nHad borne my breath away.\n\nI remember, I remember,\nThe roses, red and white;\nThe violets, and the lily-cups,\nThose flowers made of light!\nThe lilacs where the robin built,\nAnd where my brother set\nThe laburnum on his birthday\nThe tree is living yet!\n\nI remember, I remember,\nWhere I was used to swing;\nAnd thought the air must rush as fresh\nTo swallows on the wing:\nMy spirit flew in feathers then,\nThat is so heavy now,\nAnd summer pools could hardly cool\nThe fever on my brow!\n\nI remember, I remember,\nThe fir trees dark and high;\nI used to think their slender tops\nWere close against the sky:\nIt was a childish ignorance,\nBut now 'tis little joy\nTo know I'm farther off from Heav'n\nThan when I was a boy.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Reflective nostalgia! Contrast the innocent joy of childhood memories with the solemn melancholic tone of the present day.",
+        markup: [
+          `I remember, I remember, <span class="pause-mark">||</span> The house where I was <span class="stress-word">born</span>,`,
+          `The little window where the sun <span class="runon-mark">⤷ [NO PAUSE]</span> Came <span class="stress-word">peeping in at morn</span>;`,
+          `My spirit flew in feathers then, <span class="pause-mark">||</span> That is so <span class="stress-word">heavy now</span>, <span class="intonation-down">↘</span>`,
+          `To know I'm farther off from Heav'n <span class="runon-mark">⤷ [NO PAUSE]</span> Than when I was a <span class="stress-word">boy</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "peeping", phonetics: "/ˈpiːp.ɪŋ/", meaning: "窺視 / 隱現" },
+          { word: "borne", phonetics: "/bɔːrn/", meaning: "帶走 / 承受" },
+          { word: "laburnum", phonetics: "/ləˈbɜːr.nəm/", meaning: "金鏈花樹" },
+          { word: "swallows", phonetics: "/ˈswɑː.loʊz/", meaning: "燕子" },
+          { word: "slender", phonetics: "/ˈslen.dɚ/", meaning: "纖細的" },
+          { word: "ignorance", phonetics: "/ˈɪɡ.nər.əns/", meaning: "無知 / 天真" }
+        ]
+      },
+      {
+        id: "b8",
         category: "Boys S4",
         title: "Sea Fever",
         author: "John Masefield",
@@ -373,6 +468,52 @@
           { word: "fellow-rover", phonetics: "/ˈfel.oʊ ˈroʊ.vɚ/", meaning: "水手同伴" }
         ]
       },
+      {
+        id: "b9",
+        category: "Boys S5",
+        title: "The First Men on the Moon",
+        author: "J. Patrick Lewis",
+        content: `'The Eagle has landed!' - Apollo 11 Commander Neil A. Armstrong\n'A magnificent desolation!' - Air Force Colonel Edwin E. 'Buzz' Aldrin, Jr.\nJuly 20, 1969\n\nThat afternoon in mid-July,\nTwo pilgrims watched from distant space\nThe moon ballooning in the sky.\nThey rose to meet it face-to-face.\n\nTheir spidery spaceship, Eagle, dropped\nDown gently on the lunar sand.\nAnd when the module's engines stopped,\nRapt silence fell across the land.\n\nThe first man down the ladder, Neil,\nSpoke words that we remember now -\n'One small step...' It made us feel\nAs if we were there too, somehow.\n\nWhen Neil planted the flag and Buzz\nCollected lunar rocks and dust,\nThey hopped like kangaroos because\nOf gravity. Or wanderlust?\n\nA quarter million miles away,\nOne small blue planet watched in awe.\nAnd no one who was there that day\nWill soon forget the sight they saw.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Heroic narrative tone! Evoke the solemn wonder of the 1969 moon landing with awe-struck pauses.",
+        markup: [
+          `That afternoon in mid-July, <span class="pause-mark">||</span> Two <span class="stress-word">pilgrims</span> watched from distant space`,
+          `The moon ballooning in the sky. <span class="runon-mark">⤷ [NO PAUSE]</span> They rose to meet it <span class="stress-word">face-to-face</span>.`,
+          `Their spidery spaceship, Eagle, dropped <span class="runon-mark">⤷ [NO PAUSE]</span> Down gently on the <span class="stress-word">lunar sand</span>.`,
+          `And when the module's engines stopped, <span class="pause-mark">||</span> <span class="stress-word">Rapt silence</span> fell across the land. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "pilgrims", phonetics: "/ˈpɪl.ɡrɪmz/", meaning: "朝聖者 / 遠行者" },
+          { word: "desolation", phonetics: "/ˌdes.əˈleɪ.ʃən/", meaning: "荒涼 / 寂療" },
+          { word: "spidery", phonetics: "/ˈspaɪ.dɚ.i/", meaning: "細長的" },
+          { word: "lunar", phonetics: "/ˈluː.nɚ/", meaning: "月球的" },
+          { word: "rapt", phonetics: "/ræpt/", meaning: "全神貫注的" },
+          { word: "wanderlust", phonetics: "/ˈwɑːn.dɚ.lʌst/", meaning: "漫遊渴望" }
+        ]
+      },
+      {
+        id: "b10",
+        category: "Boys S5",
+        title: "The Christmas Shed",
+        author: "Wes Magee",
+        content: `It was late afternoon on Christmas Day\nwith light fading and flakes falling\nwhen the three of us raced through the copse\nwhere rhododendrons and holly bushes\nbent low under their burden of fresh snow.\nGasping, we skidded to a stop\nat the edge of the estate's allotments.\nA bitter, whining wind made us shiver\nas it whipped across the frozen earth.\n"No one's about.\nCome on!"\nSlipping and skating we dashed for Jacko's shed\nand at the back crawled through a hole\nwhere the old boards had rotted away.\nInside it was dry. The air was still.\nWe peered as daylight filtered dimly\nthrough the fly-spattered, cobwebbed window,\nand breathed the shed's special smell\nof pine, creosote, paraffin, and sawdust.\nFear of discovery made us whisper.\n"Let's see if they're\nstill there."\nCarefully we moved garden implements\nthat were stacked in a corner.\nDried soil fell and crunched beneath our boots\nas we shifted rakes, forks, spades, and hoes,\nand there was Smoky and her four kittens\nwarm in a bed of worn gloves and jerseys.\nLike the Three Kings we knelt and offered\nour Christmas gifts - turkey scraps, ham, a sausage.\nSmoky arched and purred and ate hungrily.\n"The kittens\nare still blind."\nThe food vanished. We watched in silence\nas the grey cat lay down and her mewling kittens\nguzzled greedily at the milk bar.\n"It's late."\nWe replaced the implements\nand crept out of Jacko's old shed.\nLike shadows we hared for the cover of the copse.\nChilled to the bone we reached our estate\nwhere Christmas lights were flashing. We split.\n"Same time tomorrow?"\n"Yeah."\n"See you."`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Create atmospheric suspense through whispered conspiratorial dialogue contrasted with the biting cold outdoor environment.",
+        markup: [
+          `when the three of us raced through the <span class="stress-word">copse</span> <span class="runon-mark">⤷ [NO PAUSE]</span>`,
+          `where rhododendrons and holly bushes <span class="runon-mark">⤷ [NO PAUSE]</span> bent low under their burden of fresh snow. <span class="pause-mark">||</span>`,
+          `Fear of discovery made us <span class="stress-word">whisper</span>. <span class="pause-mark">||</span> "Let's see if they're still there."`,
+          `Like shadows we hared for the cover of the <span class="stress-word">copse</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "copse", phonetics: "/kɑːps/", meaning: "小樹林 / 灌木叢" },
+          { word: "allotments", phonetics: "/əˈlɑːt.mənts/", meaning: "社區租用園圃" },
+          { word: "creosote", phonetics: "/ˈkriː.ə.soʊt/", meaning: "木材防腐漆" },
+          { word: "implements", phonetics: "/ˈɪm.plə.mənts/", meaning: "農具 / 工具" },
+          { word: "mewling", phonetics: "/ˈmjuː.lɪŋ/", meaning: "咪咪叫喚的" },
+          { word: "guzzled", phonetics: "/ˈɡʌz.əld/", meaning: "狼吞虎嚥" }
+        ]
+      },
+
+      // GIRLS S1 - S6
       {
         id: "g1",
         category: "Girls S1",
@@ -403,12 +544,307 @@
           { word: "prey", phonetics: "/preɪ/", meaning: "獵物" },
           { word: "staring match", phonetics: "/ˈster.ɪŋ mætʃ/", meaning: "凝視對決" }
         ]
+      },
+      {
+        id: "g2",
+        category: "Girls S1",
+        title: "Entering a Castle",
+        author: "Brian Moses",
+        content: `Don't enter a castle quietly\nor timidly.\ndon't enter it anxiously,\nready to bolt\nat the slightest sound.\nDon't enter it stealthily\ntaking slow and thoughtful steps,\nconsidering with each footfall\nthe mystery of history.\nDon't be meek\nor frightened to speak.\nFor when you enter a castle\nyou should charge through the gate\nand signal your arrival with a SHOUT!\nYou should play the invading army\nand barge a way through.\nYou should swagger up to the door\nthen shove it aside and announce,\n'Here I am! This is mine!'\nThis castle is here, it is waiting for you,\nand today,\nit is yours for the taking!`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Bold, commanding delivery! Contrast timid, quiet warnings in the first half with loud, triumphant energy in the second.",
+        markup: [
+          `Don't enter a castle <span class="stress-word">quietly</span> <span class="runon-mark">⤷ [NO PAUSE]</span> or timidly. <span class="pause-mark">||</span>`,
+          `Don't enter it <span class="stress-word">stealthily</span> <span class="runon-mark">⤷ [NO PAUSE]</span> taking slow and thoughtful steps.`,
+          `you should <span class="stress-word">charge</span> through the gate <span class="runon-mark">⤷ [NO PAUSE]</span> and signal your arrival with a <span class="stress-word">SHOUT</span>! <span class="intonation-up">↗</span>`,
+          `and today, <span class="pause-mark">||</span> it is <span class="stress-word">yours for the taking</span>! <span class="intonation-up">↗</span>`
+        ],
+        vocab: [
+          { word: "timidly", phonetics: "/ˈtɪm.ɪd.li/", meaning: "膽小地" },
+          { word: "stealthily", phonetics: "/ˈstel.θə.li/", meaning: "悄悄地" },
+          { word: "meek", phonetics: "/miːk/", meaning: "溫順的" },
+          { word: "swagger", phonetics: "/ˈswæɡ.ɚ/", meaning: "昂首闊步" },
+          { word: "shove", phonetics: "/ʃʌv/", meaning: "推開" }
+        ]
+      },
+      {
+        id: "g3",
+        category: "Girls S1",
+        title: "My Stepdad Is an Alien",
+        author: "Roger Stevens",
+        content: `I'd suspected for some time.\nI finally got up the courage\nto talk to him about it.\nI think you're an alien, I told him.\nNonsense, he said. Why do you think that?\nYou're bald. You don't have any hair\nanywhere.\nThat's not that unusual, he said.\nWell, you've got one green eye\nand one blue one.\nThat doesn't make me an alien, he replied.\nYou can make the toaster work\nwithout turning it on.\nThat's just a trick, he smiled.\nSometimes I hear you\ntalking to Mum in a weird alien language.\nI'm learning Greek\nand Mum lets me practise on her.\nWhat about your bright blue tail?\nAh, he said thoughtfully.\nYou're right, of course.\nSo, the tail gave it away, did it?`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Playful comic timing! Build up innocent accusations until the humorous punchline ending.",
+        markup: [
+          `I think you're an <span class="stress-word">alien</span>, I told him. <span class="pause-mark">||</span>`,
+          `Nonsense, he said. <span class="runon-mark">⤷ [NO PAUSE]</span> Why do you think that? <span class="intonation-up">↗</span>`,
+          `What about your <span class="stress-word">bright blue tail</span>? <span class="intonation-up">↗</span> <span class="pause-mark">||</span>`,
+          `So, the tail gave it away, <span class="stress-word">did it</span>? <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "suspected", phonetics: "/səˈspek.tɪd/", meaning: "懷疑" },
+          { word: "courage", phonetics: "/ˈkɝː.ɪdʒ/", meaning: "勇氣" },
+          { word: "alien", phonetics: "/ˈeɪ.li.ən/", meaning: "外星人" },
+          { word: "unusual", phonetics: "/ʌnˈjuː.ʒu.əl/", meaning: "不尋常的" },
+          { word: "thoughtfully", phonetics: "/ˈθɑːt.fəl.i/", meaning: "若有所思地" }
+        ]
+      },
+      {
+        id: "g4",
+        category: "Girls S2",
+        title: "The First Bit",
+        author: "Coral Rumble",
+        content: `I love the first bit of the morning,\nThe bit of the day that no one has used yet,\nThe part that is so clean\nYou must wipe your feet before you walk out into it.\nThe bit that smells like rose petals and cut grass\nAnd dampens your clothes with dew.\nIf you go out, you will bump into secrets,\nDiscover miracles usually covered by bus fumes.\nYou will hear pure echoes, whispers and scuttling.\nI love the first bit of the morning\nWhen the sun has only one eye open\nAnd the day is like a clean shirt,\nUncreased and ready to put on;\nThe part that gets your attention\nBy being so quiet.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Soft, delicate imagery delivery! Capture the quiet stillness of early dawn.",
+        markup: [
+          `I love the <span class="stress-word">first bit</span> of the morning, <span class="pause-mark">||</span>`,
+          `The bit of the day that <span class="stress-word">no one has used yet</span>, <span class="runon-mark">⤷ [NO PAUSE]</span>`,
+          `Discover <span class="stress-word">miracles</span> usually covered by bus fumes. <span class="pause-mark">||</span>`,
+          `The part that gets your attention <span class="runon-mark">⤷ [NO PAUSE]</span> By being <span class="stress-word">so quiet</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "dampens", phonetics: "/ˈdæm.pənz/", meaning: "使濕潤" },
+          { word: "dew", phonetics: "/duː/", meaning: "露水" },
+          { word: "miracles", phonetics: "/ˈmɪr.ə.kəlz/", meaning: "奇蹟" },
+          { word: "scuttling", phonetics: "/ˈskʌt.əl.ɪŋ/", meaning: "碎步聲" },
+          { word: "uncreased", phonetics: "/ʌnˈkriːst/", meaning: "無皺褶的" }
+        ]
+      },
+      {
+        id: "g5",
+        category: "Girls S2",
+        title: "At the End of a School Day",
+        author: "Wes Magee",
+        content: `It is the end of a school day\nand down the long drive\ncome bag-swinging, shouting children.\nDeafened, the sky winces.\nThe sun gapes in surprise.\nSuddenly the runners skid to a stop,\nstand still and stare\nat a small hedgehog\ncurled-up on the tarmac\nlike an old, frayed cricket ball.\nA girl dumps her bag, tiptoes forward\nand gingerly, so gingerly\ncarries the creature\nto the safety of a shady hedge.\nThen steps back, watching.\nGirl, children, sky and sun\nhold their breath.\nThere is a silence,\na moment to remember\non this warm afternoon in June.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Dynamic contrast! Transition smoothly from noisy schoolyard shouting to gentle, breathtaking silence around the hedgehog.",
+        markup: [
+          `come bag-swinging, <span class="stress-word">shouting children</span>. <span class="pause-mark">||</span>`,
+          `Suddenly the runners <span class="stress-word">skid to a stop</span>, <span class="runon-mark">⤷ [NO PAUSE]</span>`,
+          `and <span class="stress-word">gingerly</span>, <span class="pause-mark">||</span> so gingerly <span class="runon-mark">⤷ [NO PAUSE]</span> carries the creature...`,
+          `Girl, children, sky and sun <span class="runon-mark">⤷ [NO PAUSE]</span> <span class="stress-word">hold their breath</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "winces", phonetics: "/ˈwɪn.sɪz/", meaning: "畏縮 / 皺眉" },
+          { word: "gapes", phonetics: "/ɡeɪps/", meaning: "張口目瞪" },
+          { word: "tarmac", phonetics: "/ˈtɑːr.mæk/", meaning: "柏油路" },
+          { word: "frayed", phonetics: "/freɪd/", meaning: "磨損的" },
+          { word: "gingerly", phonetics: "/ˈdʒɪn.dʒɚ.li/", meaning: "小心翼翼地" }
+        ]
+      },
+      {
+        id: "g6",
+        category: "Girls S2",
+        title: "Marmalade",
+        author: "Peter Dixon",
+        content: `He's buried in the bushes,\nwith dockleaves round his grave,\nA crimecat desperado\nand his name was Marmalade.\nHe's the cat that caught the pigeon,\nthat stole the neighbour's meat\nand tore the velvet curtains\nand stained the satin seat.\nHe's the cat that spoilt the laundry,\nhe's the cat that spilt the stew,\nand chased the lady's poodle\nand scratched her daughter too.\nBut -\nNo more we'll hear his cat flap,\nor scratches at the door,\nor see him at the window,\nor hear his catnap snore.\nSo-\nRing his grave with pebbles,\nerect a noble sign -\nFor here lies Marmalade\nand Marmalade was MINE.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Mischievous tribute poem! Recite Marmalade's naughty adventures with pride and affection.",
+        markup: [
+          `A crimecat <span class="stress-word">desperado</span> <span class="runon-mark">⤷ [NO PAUSE]</span> and his name was Marmalade. <span class="pause-mark">||</span>`,
+          `He's the cat that caught the <span class="stress-word">pigeon</span>, <span class="pause-mark">||</span> that stole the neighbour's <span class="stress-word">meat</span>`,
+          `For here lies Marmalade <span class="runon-mark">⤷ [NO PAUSE]</span> and Marmalade was <span class="stress-word">MINE</span>! <span class="intonation-up">↗</span>`
+        ],
+        vocab: [
+          { word: "desperado", phonetics: "/ˌdes.pəˈrɑː.doʊ/", meaning: "亡命之徒 / 淘氣鬼" },
+          { word: "velvet", phonetics: "/ˈvel.vɪt/", meaning: "天鵝絨" },
+          { word: "satin", phonetics: "/ˈsæt.ən/", meaning: "緞子" },
+          { word: "catnap", phonetics: "/ˈkæt.næp/", meaning: "打盹" },
+          { word: "erect", phonetics: "/ɪˈrekt/", meaning: "樹立" }
+        ]
+      },
+      {
+        id: "g7",
+        category: "Girls S3",
+        title: "Last Day",
+        author: "Clare Bevan",
+        content: `This class was special.\nNo one was particularly clever,\nParticularly naughty,\nParticularly messy,\nParticularly anything.\nNothing miraculous happened,\nNothing stunning,\nOr funny, or frightening, or strange.\nEach day was much like another\nAs the year crept softly by,\nLeaving its ordinary debris\nOf drawings and stories\nAnd small successes\nAnd unremarkable memories.\nYet something hung between us,\nSomething that glittered like chalk dust\nOn a sunny day.\nIt was nothing you could touch,\nOr capture,\nOr exactly define,\nBut when I see the scattered offerings\nLeft on my desk\nA necklace of shells,\nA giant pot of talcum\nSmelling of yesterday,\nA limp bunch of yellow flowers,\nA crumpled card\nSigned with love -\nI can hardly bear\nTo walk away.\nThis class was special.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Tender, nostalgic emotion! Reflect on the simple schoolyard gifts left on the desk with genuine affection.",
+        markup: [
+          `This class was <span class="stress-word">special</span>. <span class="pause-mark">||</span>`,
+          `Leaving its ordinary <span class="stress-word">debris</span> <span class="runon-mark">⤷ [NO PAUSE]</span> Of drawings and stories...`,
+          `I can hardly bear <span class="runon-mark">⤷ [NO PAUSE]</span> To <span class="stress-word">walk away</span>. <span class="pause-mark">||</span>`,
+          `This class was <span class="stress-word">special</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "miraculous", phonetics: "/məˈræk.jə.ləs/", meaning: "奇蹟般的" },
+          { word: "debris", phonetics: "/dəˈbriː/", meaning: "殘留物" },
+          { word: "unremarkable", phonetics: "/ˌʌn.rɪˈmɑːr.kə.bəl/", meaning: "平淡無奇的" },
+          { word: "talcum", phonetics: "/ˈtæl.kəm/", meaning: "爽身粉" },
+          { word: "crumpled", phonetics: "/ˈkrʌm.pəld/", meaning: "皺巴巴的" }
+        ]
+      },
+      {
+        id: "g8",
+        category: "Girls S3",
+        title: "Lost, One Siamese Cat",
+        author: "Moira Andrew",
+        content: `Like a stripped-down\nengine, all his\nworking parts\nare visible.\nHe wears his skin\nlike a speed-skater's suit,\ngazes out from\nblackcurrant eyes.\nHis face is all\ntriangles, black patent\nnose, ears like\ncorner flags.\nHis whiskers sprout\nfrom peppered holes;\nyawning, his tongue is\na curling flame.\nThe most elegant\nof cats, he steps with\nNureyev grace, purrs like\na thunderbox.\nHe pours himself\nlike cream from\nwindow sill to puddle\nof sunlight.\nHe has a voice\nof a banshee, answers to\nSam. If found, return\nto Jones, number 76,\nPLEASE.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Vivid feline description! Portray the sleek, elegant movement of the Siamese cat.",
+        markup: [
+          `all his working parts <span class="runon-mark">⤷ [NO PAUSE]</span> are <span class="stress-word">visible</span>. <span class="pause-mark">||</span>`,
+          `The most <span class="stress-word">elegant</span> of cats, <span class="runon-mark">⤷ [NO PAUSE]</span> he steps with Nureyev grace,`,
+          `answers to Sam. <span class="pause-mark">||</span> If found, return to Jones, number 76, <span class="pause-mark">||</span> <span class="stress-word">PLEASE</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "visible", phonetics: "/ˈvɪz.ə.bəl/", meaning: "可見的" },
+          { word: "patent", phonetics: "/ˈpæt.ənt/", meaning: "漆皮光亮" },
+          { word: "elegant", phonetics: "/ˈel.ə.ɡənt/", meaning: "優雅的" },
+          { word: "thunderbox", phonetics: "/ˈθʌn.dɚ.bɑːks/", meaning: "雷鳴箱" },
+          { word: "banshee", phonetics: "/ˈbæn.ʃiː/", meaning: "尖聲女妖" }
+        ]
+      },
+      {
+        id: "g9",
+        category: "Girls S3",
+        title: "Stage Directions for Bluebells",
+        author: "Dinah Hendry",
+        content: `OK. Everyone else off-stage -\nwe'll just have bluebells for this one.\nLilac? Don't fire your torches yet.\nDaisies? Just stay folded, will you?\nNow. Bluebells. Can we all be up-\nstanding? That's it. Spread yourselves\nabout a bit. Use the whole stage.\nWhat d'you think we've got all this green\nfoliage for? Nice! Nice! Now families\nover on the right, please. And you two\ncould you appear to be in conversation,\nor at least on nodding acquaintance? No,\nthere's no need to be facetious. You don't\nhave to ring. Solitaries? Nestle in the shade\namong the ferns and ivies. No, you can't\nhave extra lighting. It's contrast we're after.\nOK. You shy, flirty ones - over by the wall.\nPeep through the peonies. Can you tremble?\nVery nice! Miss Precocious? By the rose.\nNow. You extras. All right, all righty,\nindividuals. We're running out of space here.\nDo what you can with the cracks in the path.\nYes, I realize you might get trampled on\nthat's just a risk you've got to take.\nLovely! Lovely! You all look very picturesque.\nOK. That's it! Hold it! Hold it!\nWe'll call it 'Late April in England, with\nbluebells'.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Animated theatrical director role-play! Address different sections of flowers around the imaginary stage with crisp projection.",
+        markup: [
+          `OK. <span class="stress-word">Everyone else off-stage</span> - <span class="pause-mark">||</span> we'll just have bluebells for this one.`,
+          `Spread yourselves about a bit. <span class="runon-mark">⤷ [NO PAUSE]</span> Use the <span class="stress-word">whole stage</span>.`,
+          `We'll call it <span class="stress-word">'Late April in England, with bluebells'</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "foliage", phonetics: "/ˈfoʊ.li.ədʒ/", meaning: "樹葉" },
+          { word: "acquaintance", phonetics: "/əˈkweɪn.təns/", meaning: "相識" },
+          { word: "facetious", phonetics: "/fəˈsiː.ʃəs/", meaning: "開玩笑的" },
+          { word: "precocious", phonetics: "/prəˈkoʊ.ʃəs/", meaning: "早熟的" },
+          { word: "picturesque", phonetics: "/ˌpɪk.tʃəˈresk/", meaning: "如畫美的" }
+        ]
+      },
+      {
+        id: "g10",
+        category: "Girls S4",
+        title: "The Song of Wandering Aengus",
+        author: "W.B. Yeats",
+        content: `I went out to the hazel wood,\nBecause a fire was in my head,\nAnd cut and peeled a hazel wand,\nAnd hooked a berry to a thread;\nAnd when white moths were on the wing,\nAnd moth-like stars were flickering out,\nI dropped the berry in a stream\nAnd caught a little silver trout.\n\nWhen I had laid it on the floor\nI went to blow the fire a-flame,\nBut something rustled on the floor,\nAnd someone called me by my name:\nIt had become a glimmering girl\nWith apple blossom in her hair\nWho called me by my name and ran\nAnd faded through the brightening air.\n\nThough I am old with wandering\nThrough hollow lands and hilly lands,\nI will find out where she has gone,\nAnd kiss her lips and take her hands;\nAnd walk among long dappled grass,\nAnd pluck till time and times are done\nThe silver apples of the moon,\nThe golden apples of the sun.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Lyrical, mystical tone! Express the timeless search for magical beauty with romantic musicality.",
+        markup: [
+          `I went out to the <span class="stress-word">hazel wood</span>, <span class="pause-mark">||</span> Because a fire was in my head,`,
+          `It had become a <span class="stress-word">glimmering girl</span> <span class="runon-mark">⤷ [NO PAUSE]</span> With apple blossom in her hair`,
+          `The silver apples of the moon, <span class="pause-mark">||</span> The <span class="stress-word">golden apples of the sun</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "hazel wand", phonetics: "/ˈheɪ.zəl wɑːnd/", meaning: "榛木枝" },
+          { word: "flickering", phonetics: "/ˈflɪk.ɚ.ɪŋ/", meaning: "閃爍的" },
+          { word: "glimmering", phonetics: "/ˈɡlɪm.ɚ.ɪŋ/", meaning: "微光閃爍" },
+          { word: "dappled", phonetics: "/ˈdæp.əld/", meaning: "斑駁光影" }
+        ]
+      },
+      {
+        id: "g11",
+        category: "Girls S4",
+        title: "My First Dog",
+        author: "Patricia Leighton",
+        content: `Prince was my dog,\nno one else's.\nI couldn't remember a time\nwhen he wasn't there.\nWe grew up together,\nroamed together,\ngot into trouble together,\nwinked at each other\nand took our tellings-off\ntogether.\nHe was my black-and-tan shadow,\nsleeking along at my heels\ntongue out,\nchasing down the green hill\nand the alleyway\nto the corner shop.\nHe was my talisman;\nwith him I was safe.\nHe was my freedom,\nhis soft coat the cushion\nof my dreams as I lay\ntracing cloud\npatterns\nin\nthe\nsky.\nAnd when he gashed his leg\non a rusted railing,\nwhen my mother quietly told me\nhe had been put down,\nhe was the first black hole\nof my young life.\nThe loneliness\nof empty arms\nand no warm neck\nto put them round.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Emotional progression from childhood joy and loyalty to poignant heartbreak.",
+        markup: [
+          `Prince was <span class="stress-word">my dog</span>, <span class="pause-mark">||</span> no one else's.`,
+          `He was my <span class="stress-word">talisman</span>; <span class="pause-mark">||</span> with him I was safe.`,
+          `he was the <span class="stress-word">first black hole</span> <span class="runon-mark">⤷ [NO PAUSE]</span> of my young life. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "roamed", phonetics: "/roʊmd/", meaning: "漫遊" },
+          { word: "sleeking", phonetics: "/sliːk.ɪŋ/", meaning: "敏捷滑行" },
+          { word: "talisman", phonetics: "/ˈtæl.ɪz.mən/", meaning: "護身符" },
+          { word: "gashed", phonetics: "/ɡæʃt/", meaning: "割傷深口" }
+        ]
+      },
+      {
+        id: "g12",
+        category: "Girls S4",
+        title: "Blackberry-Picking",
+        author: "Seamus Heaney",
+        content: `Late August, given heavy rain and sun\nFor a full week, the blackberries would ripen.\nAt first, just one, a glossy purple clot\nAmong others, red, green, hard as a knot.\nYou ate that first one and its flesh was sweet\nLike thickened wine: summer's blood was in it\nLeaving stains upon the tongue and lust for\nPicking. Then red ones inked up and that hunger\nSent us out with milk cans, pea tins, jam pots\nWhere briars scratched and wet grass bleached our boots\nRound hayfields, cornfields and potato drills\nWe trekked and picked until the cans were full,\nUntil the tinkling bottom had been covered\nWith green ones, and on top big dark blobs burned\nLike a plate of eyes. Our hands were peppered\nWith thorn pricks, our palms sticky as Bluebeard's.\nWe hoarded the fresh berries in the byre\nBut when the bath was filled we found a fur,\nA rat-grey fungus, glutting on our cache.\nThe juice was stinking too. Once off the bush\nThe fruit fermented, the sweet flesh would turn sour.\nI always felt like crying. It wasn't fair\nThat all the lovely canfuls smelt of rot.\nEach year I hoped they'd keep, knew they would not.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Sensuous tactile descriptions! Capture both the sweet anticipation of picking and the bitter disappointment of rot.",
+        markup: [
+          `At first, just one, <span class="pause-mark">||</span> a <span class="stress-word">glossy purple clot</span>`,
+          `Leaving stains upon the tongue <span class="runon-mark">⤷ [NO PAUSE]</span> and <span class="stress-word">lust for picking</span>.`,
+          `Each year I hoped they'd keep, <span class="pause-mark">||</span> <span class="stress-word">knew they would not</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "glossy", phonetics: "/ˈɡlɑː.si/", meaning: "光澤美麗的" },
+          { word: "briars", phonetics: "/ˈbraɪ.ɚz/", meaning: "刺籬 / 刺藤" },
+          { word: "hoarded", phonetics: "/ˈhɔːr.dɪd/", meaning: "囤積珍藏" },
+          { word: "fermented", phonetics: "/fɚˈmen.tɪd/", meaning: "發酵" }
+        ]
+      },
+      {
+        id: "g13",
+        category: "Girls S5",
+        title: "One Moment in Summer",
+        author: "David Harmer",
+        content: `The house is dropping swallows\none by one from under the gutter\nthey swoop and fall\non our heads as we queue\nfor ice cream.\nIt is so hot\nthat the long line of cars clogging the road\nhum like a line of electric fires.\nThey shine and shimmer, stink of oil and warm seats\nthe children gaze out from their misted windows.\nTrapped under glass\nhair plastered down with sweat\ngasping for breath like frogs under ice.\nThe cars crawl round the curve\nof the road, stuck in between the shop\nand the cafe.\nMy ice cream is butterscotch and almond\nLizzie's is chocolate, Harriet's vanilla.\nThey are so delicious and cold\nwe lick them slowly, letting the long, cool flavours\nslide down our tongues.\nInside the cars, the red-faced people\nbegin to boil.\nThe swallows flit and dart\nrapid specks of blueblack and white\nthe summer flies at us\nlike an arrow.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Evoke sweltering summer heat contrasted with the refreshing cool taste of ice cream.",
+        markup: [
+          `they <span class="stress-word">swoop and fall</span> <span class="runon-mark">⤷ [NO PAUSE]</span> on our heads as we queue for ice cream.`,
+          `the summer flies at us <span class="runon-mark">⤷ [NO PAUSE]</span> <span class="stress-word">like an arrow</span>. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "swoop", phonetics: "/swuːp/", meaning: "俯衝" },
+          { word: "clogging", phonetics: "/ˈklɑː.ɡɪŋ/", meaning: "堵塞" },
+          { word: "shimmer", phonetics: "/ˈʃɪm.ɚ/", meaning: "微光閃爍" }
+        ]
+      },
+      {
+        id: "g14",
+        category: "Girls S5",
+        title: "Hide and Seek",
+        author: "Vernon Scannell",
+        content: `Call out. Call loud: 'I'm ready! Come and find me!'\nThe sacks in the toolshed smell like the seaside.\nThey'll never find you in this salty dark,\nBut be careful that your feet aren't sticking out.\nWiser not to risk another shout.\nThe floor is cold. They'll probably be searching\nThe bushes near the swing. Whatever happens\nYou mustn't sneeze when they come prowling in.\nAnd here they are, whispering at the door;\nYou've never heard them sound so hushed before.\nDon't breathe. Don't move. Stay dumb. Hide in your\nblindness.\nThey're moving closer, someone stumbles, mutters;\nTheir words and laughter scuffle, and they're gone.\nBut don't come out just yet; they'll try the lane\nAnd then the greenhouse and back here again.\nThey must be thinking that you're very clever,\nGetting more puzzled as they search all over.\nIt seems a long time since they went away.\nYour legs are stiff, the cold bites through your coat;\nThe dark damp smell of sand moves in your throat.\nIt's time to let them know that you're the winner.\nPush of the sacks. Uncurl and stretch. That's better!\nOut off the shed and call to them: 'I've won!\nHere I am! Come and own up I've caught you!'\nThe darkening garden watches. Nothing stirs.\nThe bushes hold their breath; the sun is gone.\nYes, here you are. But where are they who sought you?`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Dramatic suspense! Build from intense excitement in hiding to the quiet, eerie realization of abandonment at the end.",
+        markup: [
+          `<span class="stress-word">Don't breathe.</span> <span class="pause-mark">||</span> <span class="stress-word">Don't move.</span> <span class="pause-mark">||</span> Stay dumb.`,
+          `Out of the shed and call to them: <span class="stress-word">'I've won!'</span> <span class="intonation-up">↗</span> <span class="pause-mark">||</span>`,
+          `Yes, here you are. <span class="pause-mark">||</span> But <span class="stress-word">where are they who sought you</span>? <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "prowling", phonetics: "/ˈpraʊ.lɪŋ/", meaning: "潛行搜尋" },
+          { word: "hushed", phonetics: "/hʌʃt/", meaning: "肅靜壓低的" },
+          { word: "sought", phonetics: "/sɔːt/", meaning: "尋找" }
+        ]
+      },
+      {
+        id: "g15",
+        category: "Girls S6",
+        title: "Follower",
+        author: "Seamus Heaney",
+        content: `My father worked with a horse-plough,\nHis shoulders globed like a full sail strung\nBetween the shafts and the furrow.\nThe horses strained at his clicking tongue.\nAn expert. He would set the wing\nAnd fit the bright steel-pointed sock.\nThe sod rolled over without breaking.\nAt the headrig, with a single pluck\nOf reins, the sweating team turned round\nAnd back into the land. His eye\nNarrowed and angled at the ground,\nMapping the furrow exactly.\nI stumbled in his hobnailed wake,\nFell sometimes on the polished sod;\nSometimes he rode me on his back\nDipping and rising to his plod.\nI wanted to grow up and plough,\nTo close one eye, stiffen my arm.\nAll I ever did was follow\nIn his broad shadow round the farm.\nI was a nuisance, tripping, falling,\nYapping always. But today\nIt is my father who keeps stumbling\nBehind me, and will not go away.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Reflective maturity! Contrast admiration for the father's masterly skill with the poignant role reversal in adulthood.",
+        markup: [
+          `My father worked with a <span class="stress-word">horse-plough</span>, <span class="pause-mark">||</span>`,
+          `An <span class="stress-word">expert</span>. <span class="pause-mark">||</span> He would set the wing...`,
+          `All I ever did was <span class="stress-word">follow</span> <span class="runon-mark">⤷ [NO PAUSE]</span> In his broad shadow round the farm.`,
+          `It is my father who keeps <span class="stress-word">stumbling</span> <span class="runon-mark">⤷ [NO PAUSE]</span> Behind me, and will not go away. <span class="intonation-down">↘</span>`
+        ],
+        vocab: [
+          { word: "globed", phonetics: "/ɡloʊbd/", meaning: "球狀弓起的" },
+          { word: "furrow", phonetics: "/ˈfɝː.oʊ/", meaning: "犁溝" },
+          { word: "hobnailed", phonetics: "/ˈhɑːb.neɪld/", meaning: "釘鞋靴" },
+          { word: "nuisance", phonetics: "/ˈnuː.səns/", meaning: "討厭鬼" }
+        ]
+      },
+      {
+        id: "g16",
+        category: "Girls S6",
+        title: "Dragon",
+        author: "Dave Calder",
+        content: `The dragon's face is wrinkled and the deep lines shape a\nmad grin\nIt bobs up and down on poles outside the door of the Ma\nBo cafe\nThe great red and golden head nods and shakes towards\nthe pressing\ncrowd of people like a bull tossing away annoying flies,\nhis tail ripples and sways above the knobbly mass of their\nheads\nas if he was slithering through a bank of pebbles, a riverbed.\nIn the window hangs a row of red cooked chickens and at\nthe door\nthe cook and his customers lean out and yell encouragment:\nthe dragon makes up his mind, lifts his head to the crowd's\nroar,\nrises to the bait, the dangling strings of red paper money,\nthe green packets of rice parcelled neatly in leaves,\nand taking the gifts gives good luck for the next year.\nSo everyone cheers, and the cymbals crash louder than ever\nas he heaves\nand surges onward, and the curled crackers crackle in a\nfearful ear-\nsplitting rat-tat-tat like machine-gunfire. And through the\nthunderous sea\nthe dragon of good fortune dances forward with fierce glee.`,
+        adjudicatorAdvice: "<strong>Adjudicator Note:</strong> Energetic spectacle! Convey the noisy excitement, cymbal crashes, and crackling fireworks of the dragon dance.",
+        markup: [
+          `The great red and golden head <span class="stress-word">nods and shakes</span> <span class="runon-mark">⤷ [NO PAUSE]</span>`,
+          `and through the thunderous sea <span class="runon-mark">⤷ [NO PAUSE]</span> the dragon of good fortune dances forward with <span class="stress-word">fierce glee</span>! <span class="intonation-up">↗</span>`
+        ],
+        vocab: [
+          { word: "knobbly", phonetics: "/ˈnɑː.bəl.i/", meaning: "崎嶇多節的" },
+          { word: "slithering", phonetics: "/ˈslɪð.ɚ.ɪŋ/", meaning: "蜿蜒滑行" },
+          { word: "cymbals", phonetics: "/ˈsɪm.bəlz/", meaning: "鈸" },
+          { word: "glee", phonetics: "/ɡliː/", meaning: "歡欣喜悅" }
+        ]
       }
     ];
 
     let filteredPoems = [...allPoems];
     let currentPoemIndex = 0;
-    let attempts = JSON.parse(localStorage.getItem('sf_attempts_v6') || '[]');
+    let attempts = JSON.parse(localStorage.getItem('sf_attempts_v7') || '[]');
     let synth = window.speechSynthesis;
     let recognition = null;
     let isRecording = false;
@@ -526,7 +962,7 @@
       document.getElementById('practiceScriptBody').innerText = poem.content;
     }
 
-    // --- Audio Mode Controller (Normal vs Toned-Down Expressive) ---
+    // --- Audio Mode Controller ---
     function playCurrentPoem() {
       stopAudio();
       const mode = document.getElementById('audioModeSelect').value;
@@ -569,7 +1005,6 @@
       synth.speak(utterance);
     }
 
-    // --- Subtle & Toned-down Prosody Engine ---
     function parseMarkupLineToSequence(lineMarkup) {
       const div = document.createElement('div');
       div.innerHTML = lineMarkup;
@@ -578,7 +1013,6 @@
       const isIntonationUp = lineMarkup.includes('intonation-up');
       const isIntonationDown = lineMarkup.includes('intonation-down');
 
-      // Toned down gentle pitch shifts (8% modulation instead of 25-50%)
       let basePitch = 1.0;
       if (isIntonationUp) basePitch = 1.08;
       if (isIntonationDown) basePitch = 0.92;
@@ -600,15 +1034,15 @@
           }
         } else if (node.nodeType === Node.ELEMENT_NODE) {
           if (node.classList.contains('pause-mark')) {
-            sequence.push({ type: 'pause', duration: 450 }); // Gentle 450ms pause
+            sequence.push({ type: 'pause', duration: 450 });
           } else if (node.classList.contains('stress-word')) {
             let text = node.textContent.trim();
             if (text) {
               sequence.push({
                 type: 'speak',
                 text: text,
-                pitch: Math.min(basePitch * 1.08, 1.2),  // Subtle +8% pitch boost
-                rate: Math.max(baseRate * 0.93, 0.65),  // Natural slight slowing
+                pitch: Math.min(basePitch * 1.08, 1.2),
+                rate: Math.max(baseRate * 0.93, 0.65),
                 volume: 1.0
               });
             }
@@ -624,7 +1058,6 @@
         traverse(child);
       }
 
-      // Add gentle line pause if NOT a run-on line
       if (!isRunOn) {
         sequence.push({ type: 'pause', duration: 300 });
       }
@@ -825,7 +1258,7 @@
         wpm: wpm
       };
       attempts.unshift(newAttempt);
-      localStorage.setItem('sf_attempts_v6', JSON.stringify(attempts));
+      localStorage.setItem('sf_attempts_v7', JSON.stringify(attempts));
       renderHistoryTable();
     }
 
@@ -865,7 +1298,7 @@
     function clearHistory() {
       if (confirm("Are you sure you want to clear your practice logs?")) {
         attempts = [];
-        localStorage.removeItem('sf_attempts_v6');
+        localStorage.removeItem('sf_attempts_v7');
         renderHistoryTable();
       }
     }
